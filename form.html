@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <form action="" method="POST" id="registrationform">
+    <h1>Borang Pendaftaran</h1>
+    <div class="alert">Message Sent</div>
+    <fieldset>
+      <!-- Section 1 -->
+      <legend><span class="section">1</span>Maklumat Diri</legend>
+      <label class="" for="name">Nama Penuh:</label>
+      <input type="text" name="name" value="" id="name" required />
+
+      <label class="" for="email">Email:</label>
+      <input type="email" name="email" value="" id="email" required />
+      <label class="" for="nombor">No Telefon:</label>
+      <input type="nombor" name="nombor" value="" id="nombor" required />
+    </fieldset>
+
+    <fieldset>
+      <!-- section 2 -->
+      <legend><span class="section">2</span>Maklumat Majlis:</legend>
+
+      <label for="Kategori">Kategori:</label>
+      <select name="Kategori" id="Kategori" required>
+          <option value="awam_ibubapa" id="awam_ibubapa">Orang Awam/Ibu Bapa Peserta</option>
+          <option value="kerajaan" id="kerajaan">Agensi Kerajaan</option>
+      </select>
+      <br /><br />
+      <label>Nama Event yang akan dihadiri:</label>
+
+      <select aria-label="label for the select" id="namaEvent" required>
+        <option value="mks">Manifestasi Keroncong Selangor</option>
+        <option value="ksn">Konsert Rentak Selangor</option>
+      </select>
+
+
+      <button type="submit" sendMessage()>Daftar</button>
+  </form>
+ 
+ <!-- <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
+  <script src="app.js"></script> -->
+</body>
+
+</html>
